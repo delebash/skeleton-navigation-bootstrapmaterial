@@ -1,0 +1,22 @@
+"{
+  'main': 'dist/js/material',
+  'shim': {
+    'dist/js/material': {
+      'deps': [
+        'jquery',
+        '../css/material.css!',
+ 	    '../css/ripples.css!',
+	    './ripples'
+      ],
+      'exports': '$'
+    }
+  },
+  'dependencies': {
+    'jquery': 'github:components/jquery',
+    'css': 'github:systemjs/plugin-css'
+  }
+}"
+
+jspm install bootstrap-material=github:fezVrasta/bootstrap-material-design@0.3.0 -o
+
+jspm uninstall bootstrap-material
